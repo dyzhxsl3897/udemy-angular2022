@@ -1,0 +1,5 @@
+<button (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="getDisplay()">Secret Password = tuna</p>
+<p *ngFor="let log of logs" [ngStyle]="{backgroundColor: getLogBackgroundColor()}" [ngClass]="{'log-color': getLogFontColor()}">
+  {{ logContent }}
+</p>
